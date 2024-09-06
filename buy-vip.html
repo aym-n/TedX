@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>TEDxNITSrinagar</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: TheEvent
+  * Template URL: https://bootstrapmade.com/theevent-conference-event-bootstrap-template/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+
+
+  <style>
+    #payment-form {
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      width: 100%;
+      margin: 20px;
+      gap: 20px;
+    }
+    #payment-form input{
+      margin: auto;
+      padding: 10px;
+      border: 1px solid #000;
+      border-radius: 3px;
+      width: 40%;
+      height: 55px;
+    }
+    #payment-form button{
+      margin: auto;
+      padding: 10px;
+      border: 1px solid #000;
+      background: red;
+      border-radius: 3px;
+      width: 40%;
+      color: #fff;
+    }
+  </style>
+
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <img src="assets/img/logo-white.png" alt="">
+        <!-- Uncomment the line below if you also wish to use an text logo -->
+        <!-- <h1 class="sitename">TheEvent</h1>  -->
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="/#hero">Home<br></a></li>
+          <li><a href="/#speakers">Speakers</a></li>
+          <li><a href="/#schedule">Schedule</a></li>
+          <li><a href="/#venue">Past Events</a></li>
+          <li><a href="/#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <a class="cta-btn d-none d-sm-block" href="/#buy-tickets">Buy Tickets</a>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <section style="height:100vh; padding: 10vh 10vw;">
+      <form id="payment-form" style="width: 100%; margin: auto; display: flex; flex-direction: column; padding: 20px;">
+        <input hidden type="text" id="base-value" value="799" />
+        <input type="text" id="coupon" placeholder="Coupon Code" style="margin-top: 100px;" />
+        <input type="text" id="customername" placeholder="Customer Name" required>
+        <input type="email" id="customeremail" placeholder="Customer Email id" required>
+        <input type="tel" id="customerphone" placeholder="Customer Phone Number" required>
+        <button type="submit" id="proceed-btn">Proceed</button>
+      </form>
+    </section>
+  </main>
+
+  <footer id="footer" class="footer dark-background">
+
+    <div class="copyright text-center">
+      <div
+        class="container d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between align-items-center">
+
+        <div class="d-flex flex-column align-items-center align-items-lg-start">
+          <div>
+            © Copyright <strong><span>TEDxNITSrinagar</span></strong>. All Rights Reserved
+          </div>
+        </div>
+
+        <div class="social-links order-first order-lg-last mb-3 mb-lg-0">
+          <a href="mailto:tedx@nitsri.ac.in"><i class="bi bi-envelope"></i></a>
+          <a href="https://www.instagram.com/tedx_nitsrinagar/"><i class="bi bi-instagram"></i></a>
+          <a href="https://www.linkedin.com/company/tedxnitsrinagar/"><i class="bi bi-linkedin"></i></a>
+        </div>
+
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Payment Gateway Integration -->
+  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+  <script src="assets/js/payment.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+  <script>
+    (function () {
+      const second = 1000,
+        minute = second * 60,
+        hour = minute * 60,
+        day = hour * 24;
+
+      //I'm adding this section so I don't have to keep updating this pen every year :-)
+      //remove this if you don't need it
+      let today = new Date(),
+        dd = String(today.getDate()).padStart(2, "0"),
+        mm = String(today.getMonth() + 1).padStart(2, "0"),
+        yyyy = today.getFullYear(),
+        nextYear = yyyy,
+        dayMonth = "09/14/",
+        birthday = dayMonth + yyyy;
+
+      today = mm + "/" + dd + "/" + yyyy;
+      if (today > birthday) {
+        birthday = dayMonth + nextYear;
+      }
+      //end
+
+      const countDown = new Date(birthday).getTime(),
+        x = setInterval(function () {
+
+          const now = new Date().getTime(),
+            distance = countDown - now;
+
+          document.getElementById("days").innerText = String(Math.floor(distance / (day))).padStart(2, '0'),
+            document.getElementById("hours").innerText = String(Math.floor((distance % (day)) / hour)).padStart(2, '0'),
+            document.getElementById("minutes").innerText = String(Math.floor((distance % (hour)) / minute)).padStart(2, '0'),
+            document.getElementById("seconds").innerText = String(Math.floor((distance % (minute)) / second)).padStart(2, '0');
+
+          //do something later when date is reached
+          if (distance < 0) {
+            document.getElementById("headline").innerText = "It's my birthday!";
+            document.getElementById("countdown").style.display = "none";
+            document.getElementById("content").style.display = "block";
+            clearInterval(x);
+          }
+          //seconds
+        }, 1000)
+    }());
+  </script>
+
+</body>
+
+</html>
