@@ -1757,6 +1757,6 @@ section,
   }
   
   li span {
-    font-size: calc(3.375rem * var(--smaller));
+    font-size: calc(1.5rem * var(--smaller));
   }
 }
