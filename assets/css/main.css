@@ -38,6 +38,14 @@
 }
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
+::-webkit-scrollbar{
+  width: 10px;
+  background-color: #f5f5f5;
+}
+::-webkit-scrollbar-thumb{
+  background-color: #eb0028;
+  border-radius: 10px;
+}
 
 .light-background {
   --background-color: #f2f2f3;
@@ -559,6 +567,7 @@ h6 {
   background-color: var(--background-color);
   font-size: 14px;
   position: relative;
+  bottom: -150px;
 }
 
 .footer .footer-top {
@@ -568,7 +577,6 @@ h6 {
 
 .footer .footer-about .logo {
   line-height: 1;
-  margin-bottom: 25px;
 }
 
 .footer .footer-about .logo img {
@@ -1757,6 +1765,6 @@ section,
   }
   
   li span {
-    font-size: calc(1.5rem * var(--smaller));
+    font-size: calc(3.375rem * var(--smaller));
   }
 }
