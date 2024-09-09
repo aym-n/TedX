@@ -777,6 +777,10 @@ h6 {
   [data-aos-delay] {
     transition-delay: 0 !important;
   }
+  .tickets ul li{
+    font-size: 10px;
+  }
+  
 }
 
 /*--------------------------------------------------------------
@@ -1777,6 +1781,6 @@ section,
   }
   
   li span {
-    font-size: calc(3.375rem * var(--smaller));
+    
   }
 }
