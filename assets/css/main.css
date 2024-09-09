@@ -249,11 +249,16 @@ h6 {
 }
 
 .form-check-input{
-  margin-left: 40% !important;
-  margin-right: 10px !important;
+  margin-left: 26vw !important; 
+  margin-right: 5px !important;
 }
 .form-check-label {
-  margin-right: 40%;
+   margin-left: 5px !important;
+   display: flex !important;  
+   justify-content: center !important;
+   align-items: center !important;
+   margin-right: 24vw !important;
+   margin-left: 5px !important;
 }
 .header .logo h1 {
   font-size: 30px;
