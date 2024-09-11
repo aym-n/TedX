@@ -1780,7 +1780,11 @@ section,
     font-size: calc(1.125rem * var(--smaller));
   }
   
-  li span {
-    
+  .main-body .qr-body{
+    display: flex;
+    flex-direction: column;
+  }
+  .qr-body img{
+    width: 100%;
   }
 }
